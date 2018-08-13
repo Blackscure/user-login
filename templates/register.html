@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .container{width: 1000px;padding: 100px;}
+   form{padding: 90px; width: 260px; border-style: ridge;background-color: aliceblue}
+   label{font-family: fantasy;}
+   h3{font-size: 20px; font-family: cursive;}
+   .success {color: green;}
+   a{text-decoration: none}
+
+</style>
+<center> 
+    <div class="container"> 
+<form action="/auth/login" method="post" >
+    <h3>welcome to Register form</h3>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"><br><br>
+    <label for="password">Password</label>
+    <input type="password" name="password"><br><br>
+    <button class="btn success">Sign Up</button>
+    <button><a href="/">Back to home</a></button> 
+</form>
+</div>
+</center>
+
+{% endblock %}
